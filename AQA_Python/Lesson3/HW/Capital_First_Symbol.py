@@ -1,3 +1,5 @@
+# Task 2
+
 import string
 
 enteredString = input('Enter the STRING, please: ')

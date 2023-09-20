@@ -1,3 +1,5 @@
+# Task 4
+
 enteredString_1 = input('Enter the first string for comparing: ')
 enteredString_2 = input('Enter the first string for comparing: ')
 
