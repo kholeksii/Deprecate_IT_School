@@ -1,3 +1,5 @@
+# Task 3
+
 enteredString = input('Enter the STRING, please: ')
 
 result = enteredString[::-1]
