@@ -1,10 +1,11 @@
-entered_number = int(input('Enter the number of petal(integer only): '))-1
+entered_number = int(input('Enter the number of petal(integer only): '))
 
 flower_tuple = ("I love you", "a little", "a lot", "passionately", "madly", "not at all")
+number_of_petals = len(flower_tuple)
 
-if entered_number < 0:
+if entered_number <= 0:
     print('Incorrect value!')
-elif entered_number < len(flower_tuple):
-    print(flower_tuple[entered_number])
+elif entered_number <= number_of_petals:
+    print(flower_tuple[entered_number-1])
 else:
-    print('Too big number!')
+    print(flower_tuple[entered_number % number_of_petals-1])
