@@ -1,7 +1,8 @@
 def func_name(func):
     def wrapper(*args):
         print(f'Function title = {func.__name__}')
-
+        result = func(*args)
+        return result
     return wrapper
 
 @func_name
@@ -21,5 +22,5 @@ def my_min(*args):
     return min_value
 
 
-my_min(1, 6, 2)
-my_max(1, 6, 2)
+print(my_min(1, 6, 2))
+print(my_max(1, 6, 2))
